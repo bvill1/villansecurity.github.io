@@ -5,7 +5,7 @@ layout: landing
 					<section id="banner">
 						<div class="inner">
 							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | newline_to_br }}</p>
+							<p>{{ site.description | markdownify | newline_to_br }}</p>
 							<ul class="actions">
 								<li><a href="#" class="button special">Activate</a></li>
 							</ul>
