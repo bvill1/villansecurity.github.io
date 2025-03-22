@@ -4,44 +4,119 @@ title: Blue Team
 ---
 
 <article id="main">
- <section class="wrapper style5">
-  <div class="inner">
-    <header class="major" style="margin-bottom: 1rem;">
-  <h2><span class="icon fa-shield"></span> Defense with Purpose</h2>
-</header>
-    <p>Cybersecurity isn’t just about firewalls and logs — it’s about protecting people, systems, and mission-critical processes from real harm. My background in emergency response taught me that clarity, speed, and trust are essential under pressure. I bring that same mindset into every defensive engagement I lead.</p>
+  <section class="wrapper style5">
+    <div class="inner">
 
-    <div class="box">
-      <h4><span class="icon fa-envelope"></span> Email Security</h4>
+      <h3><span class="icon fa-shield"></span> Defense With Purpose</h3>
+      <p style="margin-top: -20px;">Cybersecurity isn’t just about firewalls and logs — it’s about protecting people, systems, and mission-critical processes from real harm. My background in emergency response taught me that clarity, speed, and trust are essential under pressure. I bring that same mindset into every defensive engagement I lead.</p>
+
+      <h3><span class="icon fa-envelope"></span> Email Security</h3>
       <p>I manage the full stack — from secure gateways to M365 hardening. I tune rulesets, enforce policies, and monitor mail flow behaviors to proactively detect impersonation and payload-based threats.</p>
-    </div>
 
-    <div class="box">
-      <h4><span class="icon fa-bug"></span> Phishing Defense</h4>
-      <p>Dozens of phishing attempts cross my desk daily. I investigate payloads, verify compromise attempts, and educate users via customized simulation campaigns. Every click is a learning opportunity.</p>
-    </div>
-
-    <div class="box">
-      <h4><span class="icon fa-bolt"></span> Incident Response</h4>
-      <p>From triage to containment, I respond to security events with structure and speed. I write IR documentation, facilitate tabletop exercises, and help bridge comms between technical and business teams.</p>
-    </div>
-
-    <blockquote>
-      “My job isn’t just to block threats. It’s to understand them, tune out the noise, and build defenses that stand up to real pressure.”
-    </blockquote>
-      <h3>Tools in My Kit</h3>
-      <ul>
-        <li><strong>SIEM:</strong> Alert tuning, custom rule creation, and correlation analysis</li>
-        <li><strong>EDR/XDR:</strong> Investigation, containment, response workflow design</li>
-        <li><strong>M365 Defender Suite:</strong> Email, endpoint, identity, and cloud app protection</li>
-        <li><strong>Phishing Simulation:</strong> Custom campaigns and targeted user training</li>
-        <li><strong>Threat Hunting:</strong> IOC correlation, pattern recognition, and proactive sweeps</li>
-      </ul>
-
-      <h3>Always Improving</h3>
-      <p>Every phishing ticket, every false positive, every gap I uncover is an opportunity to learn. I’m constantly refining—not just my tooling, but my approach. I participate in CTFs, test detections in TryHackMe and HackTheBox labs, and study AI's role in defense as part of my doctoral work.</p>
-
-      <p>Ultimately, Blue Teaming isn’t just my specialty — it’s my mindset. It’s how I think, how I train, and how I lead. I’m not chasing headlines. I’m building resilient, informed defenses that keep organizations and people safe when it matters most.</p>
     </div>
   </section>
+
+  <section class="wrapper style2">
+    <div class="inner">
+      <header class="major">
+        <h3><span class="icon fa-wrench"></span> My Defensive Toolkit</h3>
+        <p>I work across the defensive stack — from endpoint to email to cloud — applying layered defense and adaptive response principles.</p>
+      </header>
+
+      <div class="features">
+        <article>
+          <span class="icon fa-search-plus"></span>
+          <h4>Security Monitoring</h4>
+          <p>Analyze logs, refine detections, and hunt for threats across diverse telemetry sources.</p>
+        </article>
+        <article>
+          <span class="icon fa-shield"></span>
+          <h4>Endpoint Defense</h4>
+          <p>Respond to alerts, investigate suspicious behavior, and enforce policy through endpoint tooling.</p>
+        </article>
+        <article>
+          <span class="icon fa-envelope-o"></span>
+          <h4>Email Threat Protection</h4>
+          <p>Manage phishing defense — from secure gateway tuning to message trace analysis and impersonation detection.</p>
+        </article>
+        <article>
+          <span class="icon fa-terminal"></span>
+          <h4>Scripting & Automation</h4>
+          <p>Write utility scripts to speed up analysis, automate responses, and parse data efficiently.</p>
+        </article>
+        <article>
+          <span class="icon fa-flask"></span>
+          <h4>Threat Emulation</h4>
+          <p>Apply red team awareness to better defend — using simulated adversarial behavior to harden defenses.</p>
+        </article>
+        <article>
+          <span class="icon fa-cloud"></span>
+          <h4>Cloud Security</h4>
+          <p>Secure identity and access across cloud services, configure policies, and monitor risky behaviors.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper style1">
+    <div class="inner">
+      <header class="major">
+        <h3><span class="icon fa-bolt"></span> Real-World Scenarios</h3>
+        <p>Real defense requires more than tools — it demands precision, clarity, and calm during chaos. Here's how I respond when it counts.</p>
+      </header>
+
+      <div class="spotlights">
+
+        <section>
+          <div class="content">
+            <h4>🔗 Credential Phishing Campaign</h4>
+            <p>A multi-user phishing attempt triggered elevated login risk indicators in the cloud portal. I quickly isolated impacted users, reviewed login metadata, and escalated to MFA reset procedures. Forensics revealed a compromised third-party site was the lure vector. I updated allow/block rules, tuned detection, and led a company-wide awareness brief the next day.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="content">
+            <h4>📩 Insider Email Impersonation</h4>
+            <p>A convincing spoof from a compromised external vendor attempted wire fraud. I investigated the headers, correlated it with prior delivery logs, and confirmed the malicious domain wasn't DMARC-compliant. I worked with IT to quarantine similar messages, added targeted rules, and directly contacted the impersonated user to stop the response chain.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="content">
+            <h4>⚙️ OT/IT Segmentation Response</h4>
+            <p>Suspicious scanning activity appeared on an IT asset adjacent to operational tech (OT). I validated the asset’s role, traced traffic through firewall logs, and confirmed it was a misconfigured monitoring job — not malicious. I then advised controls to restrict OT exposure and drafted a long-term segmentation proposal to leadership.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper style3">
+    <div class="inner">
+      <header class="major">
+        <h3><span class="icon fa-compass"></span> Defensive Philosophy</h3>
+        <p>At the core of every alert, investigation, or system change is a person who depends on us getting it right. That’s why I don’t just build defenses — I build trust.</p>
+      </header>
+
+      <p>My approach to cybersecurity is rooted in service. I protect systems because they power missions. I investigate incidents not just to find answers, but to ensure continuity, safety, and clarity for the people behind the screen. Whether I’m responding to a phishing escalation, tuning detection thresholds, or planning long-term controls, I treat each decision with purpose.</p>
+
+      <p>Coming from emergency response and physical security, I know the cost of delay, the importance of clarity under pressure, and the difference it makes when someone shows up prepared. That mindset guides everything I do — from email triage to architecture discussions to writing documentation that others can trust in a crisis.</p>
+
+      <p>Defense isn't just a job. It's a discipline — and a responsibility.</p>
+    </div>
+  </section>
+
+  <section class="wrapper style4">
+    <div class="inner">
+      <header>
+        <h3>Let’s Talk Blue Team</h3>
+        <p>If you're building secure systems or need a resilient defender on your side, I’d love to connect.</p>
+      </header>
+      <ul class="actions vertical">
+        <li><a href="/contact.html" class="button fit special">Get in Touch</a></li>
+      </ul>
+    </div>
+  </section>
+
 </article>
