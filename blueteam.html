@@ -4,14 +4,17 @@ title: Blue Team
 ---
 
 <article id="main">
-  <section class="wrapper">
+
+  <section class="wrapper" style="background-color: #f5f7fa;">
     <div class="inner">
 
-      <h3><span class="icon fa-shield"></span> Defense With Purpose</h3>
+      <h3 style="border-left: 4px solid #0077cc; padding-left: 0.6em;"><span class="icon fa-shield"></span> Defense With Purpose</h3>
       <p>Cybersecurity isn’t just about firewalls and logs — it’s about protecting people, systems, and mission-critical processes from real harm. My background in emergency response taught me that clarity, speed, and trust are essential under pressure. I bring that same mindset into every defensive engagement I lead.</p>
 
-      <h3><span class="icon fa-envelope"></span> Email Security</h3>
-      <p>I manage the full stack — from secure gateways to M365 hardening. I tune rulesets, enforce policies, and monitor mail flow behaviors to proactively detect impersonation and payload-based threats.</p>
+      <img src="/images/blue-defense.jpg" alt="Cybersecurity defense graphic" style="width: 100%; margin: 2em 0; border-radius: 8px;" />
+
+      <h3 style="border-left: 4px solid #0077cc; padding-left: 0.6em;"><span class="icon fa-envelope"></span> Email Security</h3>
+      <p>I manage the full stack — from secure gateways to M365 hardening. I tune rulesets, enforce policies, and monitor mail flow behaviors to proactively detect impersonation and payload-based threats. From detection to user education, I handle every aspect of phishing defense.</p>
 
     </div>
   </section>
@@ -19,38 +22,38 @@ title: Blue Team
   <section class="wrapper">
     <div class="inner">
       <header class="major">
-        <h3><span class="icon fa-wrench"></span> My Defensive Toolkit</h3>
+        <h3 style="border-left: 4px solid #0077cc; padding-left: 0.6em;"><span class="icon fa-wrench"></span> My Defensive Toolkit</h3>
         <p>I work across the defensive stack — from endpoint to email to cloud — applying layered defense and adaptive response principles.</p>
       </header>
 
       <div class="features">
         <article>
-          <span class="icon fa-search-plus"></span>
+          <span class="icon fa-search-plus" style="color: #0077cc;"></span>
           <h4>Security Monitoring</h4>
           <p>Analyze logs, refine detections, and hunt for threats across diverse telemetry sources.</p>
         </article>
         <article>
-          <span class="icon fa-shield"></span>
+          <span class="icon fa-shield" style="color: #0077cc;"></span>
           <h4>Endpoint Defense</h4>
           <p>Respond to alerts, investigate suspicious behavior, and enforce policy through endpoint tooling.</p>
         </article>
         <article>
-          <span class="icon fa-envelope-o"></span>
+          <span class="icon fa-envelope-o" style="color: #0077cc;"></span>
           <h4>Email Threat Protection</h4>
           <p>Manage phishing defense — from secure gateway tuning to message trace analysis and impersonation detection.</p>
         </article>
         <article>
-          <span class="icon fa-terminal"></span>
+          <span class="icon fa-terminal" style="color: #0077cc;"></span>
           <h4>Scripting & Automation</h4>
           <p>Write utility scripts to speed up analysis, automate responses, and parse data efficiently.</p>
         </article>
         <article>
-          <span class="icon fa-flask"></span>
+          <span class="icon fa-flask" style="color: #0077cc;"></span>
           <h4>Threat Emulation</h4>
           <p>Apply red team awareness to better defend — using simulated adversarial behavior to harden defenses.</p>
         </article>
         <article>
-          <span class="icon fa-cloud"></span>
+          <span class="icon fa-cloud" style="color: #0077cc;"></span>
           <h4>Cloud Security</h4>
           <p>Secure identity and access across cloud services, configure policies, and monitor risky behaviors.</p>
         </article>
@@ -58,54 +61,56 @@ title: Blue Team
     </div>
   </section>
 
-  <section class="wrapper">
+  <section class="wrapper" style="background-color: #f5f7fa;">
     <div class="inner">
       <header class="major">
-        <h3><span class="icon fa-bolt"></span> Real-World Scenarios</h3>
-        <p>Real defense requires more than tools — it demands precision, clarity, and calm during chaos. Here's how I respond when it counts.</p>
+        <h3 style="border-left: 4px solid #0077cc; padding-left: 0.6em;"><span class="icon fa-bolt"></span> Real-World Scenarios</h3>
+        <p>Defense is more than tools — it's calm clarity in moments of chaos. Here's how I respond when it counts.</p>
       </header>
 
-      <div class="spotlights">
+      <section class="spotlights">
         <section>
           <div class="content">
             <h4>🔗 Credential Phishing Campaign</h4>
-            <p>A multi-user phishing attempt triggered elevated login risk indicators in the cloud portal. I quickly isolated impacted users, reviewed login metadata, and escalated to MFA reset procedures. Forensics revealed a compromised third-party site was the lure vector. I updated allow/block rules, tuned detection, and led a company-wide awareness brief the next day.</p>
+            <p>A multi-user phishing attempt triggered elevated login risk indicators. I isolated impacted users, reviewed login metadata, reset MFA, and traced the lure to a compromised third-party site. I tuned detections and led a company-wide awareness update within 24 hours.</p>
           </div>
         </section>
 
         <section>
           <div class="content">
             <h4>📩 Insider Email Impersonation</h4>
-            <p>A convincing spoof from a compromised external vendor attempted wire fraud. I investigated the headers, correlated it with prior delivery logs, and confirmed the malicious domain wasn't DMARC-compliant. I worked with IT to quarantine similar messages, added targeted rules, and directly contacted the impersonated user to stop the response chain.</p>
+            <p>A convincing spoof email tried to initiate wire fraud. I inspected headers, identified a spoofed vendor, blocked the domain, and followed up with internal education and sender authentication policy adjustments.</p>
           </div>
         </section>
 
         <section>
           <div class="content">
             <h4>⚙️ OT/IT Segmentation Response</h4>
-            <p>Suspicious scanning activity appeared on an IT asset adjacent to operational tech (OT). I validated the asset’s role, traced traffic through firewall logs, and confirmed it was a misconfigured monitoring job — not malicious. I then advised controls to restrict OT exposure and drafted a long-term segmentation proposal to leadership.</p>
+            <p>Scanning activity from an IT host near OT assets raised red flags. I validated network paths, confirmed it was a misconfigured monitor, then proposed enhanced firewall segmentation and traffic rules to leadership.</p>
           </div>
         </section>
-      </div>
+      </section>
     </div>
   </section>
 
   <section class="wrapper">
     <div class="inner">
       <header class="major">
-        <h3><span class="icon fa-compass"></span> Defensive Philosophy</h3>
-        <p>At the core of every alert, investigation, or system change is a person who depends on us getting it right. That’s why I don’t just build defenses — I build trust.</p>
+        <h3 style="border-left: 4px solid #0077cc; padding-left: 0.6em;"><span class="icon fa-compass"></span> Defensive Philosophy</h3>
+        <p>Every control, every script, every email I secure — it’s not just about uptime. It’s about protecting the mission and the people behind it.</p>
       </header>
 
-      <p>My approach to cybersecurity is rooted in service. I protect systems because they power missions. I investigate incidents not just to find answers, but to ensure continuity, safety, and clarity for the people behind the screen. Whether I’m responding to a phishing escalation, tuning detection thresholds, or planning long-term controls, I treat each decision with purpose.</p>
+      <blockquote style="border-left: 4px solid #0077cc; padding-left: 1em; font-style: italic;">
+        “Defense isn't just a job. It's a discipline — and a responsibility.”
+      </blockquote>
 
-      <p>Coming from emergency response and physical security, I know the cost of delay, the importance of clarity under pressure, and the difference it makes when someone shows up prepared. That mindset guides everything I do — from email triage to architecture discussions to writing documentation that others can trust in a crisis.</p>
+      <p>My approach is rooted in service. I protect systems because they power missions. I investigate not just to find answers, but to keep people safe and informed. Whether I’m triaging phishing attempts, configuring mail flow, or writing detection logic, I treat it with purpose.</p>
 
-      <p>Defense isn't just a job. It's a discipline — and a responsibility.</p>
+      <p>Coming from physical security and EMS, I’ve lived the stakes of getting it right under pressure. I bring that urgency and clarity to every control, alert, and strategy conversation I enter.</p>
     </div>
   </section>
 
-  <section class="wrapper">
+  <section class="wrapper" style="background-color: #f5f7fa;">
     <div class="inner">
       <header>
         <h3>Let’s Talk Blue Team</h3>
