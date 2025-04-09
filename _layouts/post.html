@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Post"
+---
+
+<section id="main" class="container">
+  <header class="major">
+    <h2>{{ page.title }}</h2>
+    <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
+  </header>
+
+  <div class="box">
+    {{ content }}
+  </div>
+
+  <ul class="actions">
+    <li><a href="/blog/" class="button alt">Back to Blog</a></li>
+  </ul>
+</section>
