@@ -1,16 +1,28 @@
 ---
-layout: blog
+layout: default
 title: Blog
 permalink: /blog/
 ---
 
-Welcome to the Villan Security blog. Here you’ll find long-form thoughts on AI, cybersecurity, decision-making, and critical thinking in tech.
+<section id="main" class="container">
+  <header class="major">
+    <h2>Blog</h2>
+    <p>Reflections on cybersecurity, AI, and the critical thinking needed to navigate both.</p>
+  </header>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br />
-      <small>{{ post.date | date: "%B %d, %Y" }}</small>
-    </li>
-  {% endfor %}
-</ul>
+  <div class="box">
+    {% for post in site.posts %}
+      <section>
+        <header>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+        </header>
+        <p>{{ post.excerpt }}</p>
+        <ul class="actions">
+          <li><a href="{{ post.url }}" class="button small">Read More</a></li>
+        </ul>
+        <hr />
+      </section>
+    {% endfor %}
+  </div>
+</section>
