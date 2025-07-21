@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /resume.html
+Allow: /
+
+Sitemap: https://villansecurity.com/sitemap.xml
