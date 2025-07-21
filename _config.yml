@@ -1,6 +1,11 @@
 # Welcome to Jekyll!
 #
+include:
+  - robots.txt
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 # Site settings
 title: Brian Villanueva
 description: |
