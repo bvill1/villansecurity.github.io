@@ -1,66 +1,65 @@
-///
-///	Spectral by HTML5 UP
-///	html5up.net | @n33co
-///	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
 // Misc.
-	$misc: (
-		max-spotlights:		10,
-		max-features:		10,
-		z-index-base:		10000
-	);
+$misc: (
+  max-spotlights: 10,
+  max-features: 10,
+  z-index-base: 10000
+);
 
 // Duration.
-	$duration: (
-		transitions:		0.2s,
-		menu:				0.5s,
-		fadein:				3s
-	);
+$duration: (
+  transitions: 0.2s,
+  menu: 0.5s,
+  fadein: 3s
+);
 
 // Size.
-	$size: (
-		element-height:		2.75em,
-		element-margin:		2em,
-		letter-spacing:		0.075em,
-		letter-spacing-alt:	0.225em
-	);
+$size: (
+  element-height: 2.75em,
+  element-margin: 2em,
+  letter-spacing: 0.075em,
+  letter-spacing-alt: 0.225em
+);
 
 // Font.
-	$font: (
-		family:				('Open Sans', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				400,
-		weight-bold:		600,
-		weight-extrabold:	800
-	);
+$font: (
+  family: ('Open Sans', Helvetica, sans-serif),
+  family-fixed: ('Courier New', monospace),
+  weight: 400,
+  weight-bold: 600,
+  weight-extrabold: 800
+);
 
 // Palette.
-	$palette: (
-  		bg: #ffffff,
-  		fg: #222222,
-  		fg-light: #666666,
-  		fg-bold: #000000,
-  		border: #c0c0c0,
-  		border-bg: #f0f0f0,
- 		 border2-bg: #e0e0e0,
+$palette: (
+  bg: #ffffff,
+  fg: #222222,
+  fg-light: #666666,
+  fg-bold: #000000,
+  border: #c0c0c0,
+  border-bg: #f0f0f0,
+  border2-bg: #e0e0e0,
 
-  	accent1: (
-    		bg: #0066cc,
-    		fg: #ffffff,
-    		fg-bold: #ffffff,
-    		border: #004c99,
-    		border-bg: #005bb5
+  accent1: (
+    bg: #0066cc,
+    fg: #ffffff,
+    fg-bold: #ffffff,
+    border: #004c99,
+    border-bg: #005bb5
   ),
 
-  	accent2: (
-    		bg: #0a0a0a,
-    		fg: #ffffff,
-    		border: #333333
+  accent2: (
+    bg: #0a0a0a,
+    fg: #ffffff,
+    fg-bold: #ffffff,
+    border: #333333,
+    border-bg: #222222
   ),
 
-  	accent5: (
-    		bg: #c0c0c0,
-    		fg: #0a0a0a
+  accent5: (
+    bg: #c0c0c0,
+    fg: #0a0a0a,
+    fg-bold: #000000,
+    border: #999999,
+    border-bg: #d9d9d9
   )
 );
