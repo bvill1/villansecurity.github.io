@@ -548,6 +548,13 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
 
+/* Clear floated images so wrappers contain them */
+.content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 /* List */
 
 	ol {
