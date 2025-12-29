@@ -2,133 +2,152 @@
 layout: page
 title: Projects
 ---
-<article id="main">  
+
+<article id="main">
   <section class="wrapper style5">
     <div class="inner">
 
-<!-- Example Usage -->
-<section class="project" style="background-color: #eef2f5;">
-  <h2>The Family Cyber Drill</h2>
+      <p>
+        Projects and publications by Brian Villanueva 
+      </p>
+      <p>focused on information security, detection engineering, and security culture.</p>
 
-  <div class="project-meta">
-    <span class="project-tags">#book #cyberawareness #securityculture</span>
-    <span class="project-date">Published 2025</span>
-  </div>
+      <section class="project" style="background-color: #eef2f5;">
+        <h2>The Family Cyber Drill by Brian Villanueva</h2>
 
-  <p class="project-description">
-    <strong>The Family Cyber Drill</strong> is a published cybersecurity awareness book written by Brian Villanueva. It focuses on practical, family-oriented security habits, translating real-world threat concepts into clear, repeatable drills that help households build safer digital behaviors without fear or technical overload.
-  </p>
+        <div class="project-meta">
+          <span class="project-tags">#book #cyberawareness #securityculture</span>
+          <span class="project-date">Published 2025</span>
+        </div>
 
-  <ul class="project-highlights">
-    <li>Author: Brian Villanueva</li>
-    <li>Focus: Cybersecurity awareness, behavior, and security culture</li>
-    <li>Audience: Families, parents, and non-technical users</li>
-    <li>Published via Amazon Kindle Direct Publishing</li>
-  </ul>
+        <p>
+          <a href="https://www.amazon.com/dp/B0GCXR647K" target="_blank" rel="noopener">
+            <img
+              src="/images/projects/Cover.jpg"
+              alt="The Family Cyber Drill book cover by Brian Villanueva"
+              style="max-width: 220px; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+            />
+          </a>
+        </p>
 
-  <p>
-    <a href="https://www.amazon.com/dp/B0GCXR647K" target="_blank" rel="noopener">
-      View The Family Cyber Drill on Amazon
-    </a>
-  </p>
-</section>
-<section class="project" style="background-color: #f5f7fa;">
-  <h2>Villan Security Portfolio Website</h2>
-  <div class="project-meta">
-    <span class="project-tags">#webdev #branding #detectionengineering</span>
-    <span class="project-date">March 2025</span>
-  </div>
-  <p class="project-description">
-    This site is more than a résumé; it's a full cybersecurity showcase, built from scratch using GitHub Pages, Jekyll, and the Spectral theme. Designed for clarity, stealth aesthetics, and real-world engagement, the site incorporates personal branding, red/blue team content, project documentation, and embedded detection mechanisms. It's both a storytelling platform and a live operational artifact.
-  </p>
-  <div class="project-diagram">
-    <img src="/images/projects/Villan Security Logo.png" alt="Villan Security Logo">
-  </div>
-  <ul class="project-highlights">
-    <li>Tech Used: GitHub Pages, Jekyll, Cloudflare, Zoho Mail, Discord Webhooks</li>
-    <li>Custom design and theme modification to align with blue/black/silver brand identity</li>
-    <li>Built-in stealth canary trap using Cloudflare Workers and Discord alerting</li>
-    <li>Modular content structure for ongoing project expansion and visual storytelling</li>
-    <li>Balances personal narrative with professional expertise and real-world detection logic</li>
-  </ul>
-</section>
-<section class="project">
-  <h2>Stealth Web-Based Canary Trap</h2>
-  <div class="project-meta">
-    <span class="project-tags">#websecurity #detection #osint #threatintel</span>
-    <span class="project-date">March 2025</span>
-  </div>
-  <p class="project-description">
-    This project implements a passive, stealth-based canary trap using a 1x1 transparent image embedded in a public-facing cert showcase. The trap silently triggers when a visitor loads the page, logging metadata such as IP, User-Agent, and Referrer. Real-time alerts are sent to Discord, and traffic is enriched through external APIs to extract ASN, geo-location, and abuse reputation.
-  </p>
-  <div class="project-diagram">
-    <img src="/images/projects/canary-trap-diagram1.png" alt="Stealth Canary Trap System Diagram">
-  </div>
-  <ul class="project-highlights">
-    <li>Tech Used: Cloudflare Workers, Discord Webhooks, Pipedream, ipinfo.io, AbuseIPDB, Google Sheets, Looker Studio</li>
-    <li>Detection: Triggers on image load — even from headless browsers or scrapers</li>
-    <li>Enrichment: Adds ASN, Country, and Abuse Confidence Score for every hit</li>
-    <li>Logging: Centralized log to Google Sheets for retention and analysis</li>
-    <li>Visualization: Live Looker Studio dashboard tracks activity trends over time</li>
-  </ul>
-  <p style="font-size: 0.85em; color: #777;">
-    This trap runs silently on public pages and provides visibility into reconnaissance behavior from scanning infrastructure and opportunistic threats.
-  </p>
-</section>
-<section class="project" style="background-color: #f5f7fa;">
-  <h2>Social Media OSINT Dashboard</h2>
-  <div class="project-meta">
-    <span class="project-tags">#osint #ai #dashboard</span>
-    <span class="project-date">February 2025</span>
-  </div>
-  <p class="project-description">
-    This project combines real-time social media scraping, AI-driven sentiment analysis, and visual reporting to track public chatter around a target organization or topic. Built with Python and Streamlit, it ingests Twitter, Reddit, and RSS news content and generates dashboards, word clouds, keyword charts, and PDF reports. Sentiment scoring leverages GPT-based language models for nuanced analysis across platforms.
-  </p>
-  <img src="/images/projects/osint-dashboard.png" alt="OSINT Dashboard Screenshot" />
-  <img src="/images/projects/osint-dashboard2.png" alt="OSINT Dashboard Screenshot 2" />
-  <p style="font-size: 0.85em; background-color: #eef2f5; padding: 0.75em 1em; border-left: 4px solid #0077cc; margin-top: 1em; border-radius: 4px;">
-  <strong>Note:</strong> This dashboard displays OSINT findings using publicly available data. Content shown here is for demonstration purposes only and does not imply affiliation.</p>
-  <ul class="project-highlights">
-    <li>Tech Used: Python, Streamlit, OpenAI GPT, Reddit/Twitter APIs, BeautifulSoup, FPDF</li>
-    <li>AI-powered sentiment classification using OpenAI’s GPT model</li>
-    <li>Generates visual summaries, PDF reports, and interactive dashboards</li>
-    <li>Designed for threat intelligence, brand monitoring, or executive insight</li>
-  </ul>
-</section>
-<section class="project">
-  <h2>Capture the Flag Participation</h2>
-  <div class="project-meta">
-    <span class="project-tags">#ctf #cyberquest #picoctf</span>
-    <span class="project-date">Spring 2025</span>
-  </div>
-  <p class="project-description">
-    I actively participate in national and platform-based CTF events to sharpen my technical skills and test myself against evolving challenges. These competitions span reverse engineering, forensics, scripting, exploitation, and real-world threat emulation. While scoring points is great, I focus on learning new techniques and reflecting on what I could apply to blue team operations.
-  </p>
-  <ul class="project-highlights">
-    <li>Participated in <strong>picoCTF 2025</strong> — solved Linux privilege escalation, XOR crypto puzzles, and logic flaws under time pressure</li>
-    <li>Completed <strong>US Cyber Challenge: Cyber Quest 2025</strong> — demonstrated core skills in secure coding, threat analysis, and policy evaluation</li>
-    <li>Maintain internal notes/playbooks for lessons learned and detection correlations</li>
-    <li>Focused on bridging offensive challenge techniques with defensive detection thinking</li>
-  </ul>
-</section>
-<section class="project" style="background-color: #f5f7fa;">
-  <h2>Coming Soon: Adversary Simulation Lab</h2>
-  <div class="project-meta">
-    <span class="project-tags">#purpleteam #docker #crto #detectionengineering</span>
-    <span class="project-date">In Progress</span>
-  </div>
-  <p class="project-description">
-    I'm building a containerized purple team lab using Docker to simulate adversary behaviors, validate defensive coverage, and test detection logic. The lab integrates both offensive and defensive components — from Cobalt Strike simulations to Sysmon and ELK log analysis — allowing me to iterate quickly and tune detections in a controlled, modular environment.
-  </p>
-  <ul class="project-highlights">
-    <li>Dockerized infrastructure for red team tooling and defensive telemetry collection</li>
-    <li>Focused on real-world tactics: credential access, lateral movement, and persistence</li>
-    <li>Mapped to MITRE ATT&CK for transparent detection alignment and tuning</li>
-    <li>Built to support CRTO preparation, detection engineering, and purple team development</li>
-  </ul>
-</section>
+        <p class="project-description">
+          <strong>The Family Cyber Drill</strong> is a published cybersecurity awareness book written by Brian Villanueva. It focuses on practical, family-oriented security habits, translating real-world threat concepts into clear, repeatable drills that help households build safer digital behaviors without fear or technical overload.
+        </p>
 
+        <ul class="project-highlights">
+          <li>Author: Brian Villanueva</li>
+          <li>Focus: Cybersecurity awareness, behavior, and security culture</li>
+          <li>Audience: Families, parents, and non-technical users</li>
+          <li>Published via Amazon Kindle Direct Publishing</li>
+        </ul>
 
+        <p>
+          <a href="https://www.amazon.com/dp/B0GCXR647K" target="_blank" rel="noopener">
+            View The Family Cyber Drill on Amazon
+          </a>
+        </p>
+      </section>
+
+      <section class="project" style="background-color: #f5f7fa;">
+        <h2>Villan Security Portfolio Website</h2>
+        <div class="project-meta">
+          <span class="project-tags">#webdev #branding #detectionengineering</span>
+          <span class="project-date">March 2025</span>
+        </div>
+        <p class="project-description">
+          This site is more than a résumé; it's a full cybersecurity showcase, built from scratch using GitHub Pages, Jekyll, and the Spectral theme. Designed for clarity, stealth aesthetics, and real-world engagement, the site incorporates personal branding, red/blue team content, project documentation, and embedded detection mechanisms. It's both a storytelling platform and a live operational artifact.
+        </p>
+        <div class="project-diagram">
+          <img src="/images/projects/Villan Security Logo.png" alt="Villan Security Logo">
+        </div>
+        <ul class="project-highlights">
+          <li>Tech Used: GitHub Pages, Jekyll, Cloudflare, Zoho Mail, Discord Webhooks</li>
+          <li>Custom design and theme modification to align with blue/black/silver brand identity</li>
+          <li>Built-in stealth canary trap using Cloudflare Workers and Discord alerting</li>
+          <li>Modular content structure for ongoing project expansion and visual storytelling</li>
+          <li>Balances personal narrative with professional expertise and real-world detection logic</li>
+        </ul>
+      </section>
+
+      <section class="project">
+        <h2>Stealth Web-Based Canary Trap</h2>
+        <div class="project-meta">
+          <span class="project-tags">#websecurity #detection #osint #threatintel</span>
+          <span class="project-date">March 2025</span>
+        </div>
+        <p class="project-description">
+          This project implements a passive, stealth-based canary trap using a 1x1 transparent image embedded in a public-facing cert showcase. The trap silently triggers when a visitor loads the page, logging metadata such as IP, User-Agent, and Referrer. Real-time alerts are sent to Discord, and traffic is enriched through external APIs to extract ASN, geo-location, and abuse reputation.
+        </p>
+        <div class="project-diagram">
+          <img src="/images/projects/canary-trap-diagram1.png" alt="Stealth Canary Trap System Diagram">
+        </div>
+        <ul class="project-highlights">
+          <li>Tech Used: Cloudflare Workers, Discord Webhooks, Pipedream, ipinfo.io, AbuseIPDB, Google Sheets, Looker Studio</li>
+          <li>Detection: Triggers on image load — even from headless browsers or scrapers</li>
+          <li>Enrichment: Adds ASN, Country, and Abuse Confidence Score for every hit</li>
+          <li>Logging: Centralized log to Google Sheets for retention and analysis</li>
+          <li>Visualization: Live Looker Studio dashboard tracks activity trends over time</li>
+        </ul>
+        <p style="font-size: 0.85em; color: #777;">
+          This trap runs silently on public pages and provides visibility into reconnaissance behavior from scanning infrastructure and opportunistic threats.
+        </p>
+      </section>
+
+      <section class="project" style="background-color: #f5f7fa;">
+        <h2>Social Media OSINT Dashboard</h2>
+        <div class="project-meta">
+          <span class="project-tags">#osint #ai #dashboard</span>
+          <span class="project-date">February 2025</span>
+        </div>
+        <p class="project-description">
+          This project combines real-time social media scraping, AI-driven sentiment analysis, and visual reporting to track public chatter around a target organization or topic. Built with Python and Streamlit, it ingests Twitter, Reddit, and RSS news content and generates dashboards, word clouds, keyword charts, and PDF reports. Sentiment scoring leverages GPT-based language models for nuanced analysis across platforms.
+        </p>
+        <img src="/images/projects/osint-dashboard.png" alt="OSINT Dashboard Screenshot" />
+        <img src="/images/projects/osint-dashboard2.png" alt="OSINT Dashboard Screenshot 2" />
+        <p style="font-size: 0.85em; background-color: #eef2f5; padding: 0.75em 1em; border-left: 4px solid #0077cc; margin-top: 1em; border-radius: 4px;">
+          <strong>Note:</strong> This dashboard displays OSINT findings using publicly available data. Content shown here is for demonstration purposes only and does not imply affiliation.
+        </p>
+        <ul class="project-highlights">
+          <li>Tech Used: Python, Streamlit, OpenAI GPT, Reddit/Twitter APIs, BeautifulSoup, FPDF</li>
+          <li>AI-powered sentiment classification using OpenAI’s GPT model</li>
+          <li>Generates visual summaries, PDF reports, and interactive dashboards</li>
+          <li>Designed for threat intelligence, brand monitoring, or executive insight</li>
+        </ul>
+      </section>
+
+      <section class="project">
+        <h2>Capture the Flag Participation</h2>
+        <div class="project-meta">
+          <span class="project-tags">#ctf #cyberquest #picoctf</span>
+          <span class="project-date">Spring 2025</span>
+        </div>
+        <p class="project-description">
+          I actively participate in national and platform-based CTF events to sharpen my technical skills and test myself against evolving challenges. These competitions span reverse engineering, forensics, scripting, exploitation, and real-world threat emulation. While scoring points is great, I focus on learning new techniques and reflecting on what I could apply to blue team operations.
+        </p>
+        <ul class="project-highlights">
+          <li>Participated in <strong>picoCTF 2025</strong> — solved Linux privilege escalation, XOR crypto puzzles, and logic flaws under time pressure</li>
+          <li>Completed <strong>US Cyber Challenge: Cyber Quest 2025</strong> — demonstrated core skills in secure coding, threat analysis, and policy evaluation</li>
+          <li>Maintain internal notes/playbooks for lessons learned and detection correlations</li>
+          <li>Focused on bridging offensive challenge techniques with defensive detection thinking</li>
+        </ul>
+      </section>
+
+      <section class="project" style="background-color: #f5f7fa;">
+        <h2>Coming Soon: Adversary Simulation Lab</h2>
+        <div class="project-meta">
+          <span class="project-tags">#purpleteam #docker #crto #detectionengineering</span>
+          <span class="project-date">In Progress</span>
+        </div>
+        <p class="project-description">
+          I'm building a containerized purple team lab using Docker to simulate adversary behaviors, validate defensive coverage, and test detection logic. The lab integrates both offensive and defensive components — from Cobalt Strike simulations to Sysmon and ELK log analysis — allowing me to iterate quickly and tune detections in a controlled, modular environment.
+        </p>
+        <ul class="project-highlights">
+          <li>Dockerized infrastructure for red team tooling and defensive telemetry collection</li>
+          <li>Focused on real-world tactics: credential access, lateral movement, and persistence</li>
+          <li>Mapped to MITRE ATT&CK for transparent detection alignment and tuning</li>
+          <li>Built to support CRTO preparation, detection engineering, and purple team development</li>
+        </ul>
+      </section>
 
     </div>
   </section>
