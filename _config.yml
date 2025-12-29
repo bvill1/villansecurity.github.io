@@ -7,13 +7,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 # Site settings
-title: Brian Villanueva
-description: |
-  Strategic Cybersecurity Leader & Technologist
-  Designing resilient defenses and building threat-informed systems across red and blue teams.
-  Expert in critical infrastructure protection, incident response, and security convergence.
-  Explore my portfolio, projects, and professional journey.
-owner: Brian Villanueva # or company name
+title: "Brian Villanueva"
+tagline: "Information Security and Enterprise Risk"
+description: "Strategic cybersecurity leadership focused on defensible security programs, security culture, and risk-informed decision making."
+owner: Villan Security LLC
 first_published: 2025 # if migrating another site, the year of your first publish
 email: Brian@villansecurity.com
 baseurl: "" # the subpath of your site, e.g. /blog
