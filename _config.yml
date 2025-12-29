@@ -22,7 +22,7 @@ social:
   linkedin-square: https://linkedin.com/in/brian-villanueva
   #facebook-official: https://facebook.com/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
-  email: brian@villansecurity.com
+  email: mailto:brian@villansecurity.com
   #flickr:
   #instagram:
   #youtube-square:
@@ -55,7 +55,7 @@ social:
   #ils:
   #forumbee:
   #tripadvisor:
-  amazon:amazon.com/author/brian-villanueva
+  amazon: https://amazon.com/author/brian-villanueva
 
 # Build settings
 markdown: kramdown
