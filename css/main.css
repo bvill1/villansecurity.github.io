@@ -1,0 +1,424 @@
+---
+# Main stylesheet (quiet authority notebook)
+---
+
+/* Load fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap");
+
+/* =========================================================
+   Variables
+   ========================================================= */
+
+:root {
+  --bg: #f8f8f6;
+  --panel: #ffffff;
+  --text: #1c1c1c;
+  --muted: #5f6368;
+  --faint: #8a8f95;
+
+  --accent: #2f5d8c;
+  --accent-2: #3a4a5a;
+
+  --border: #e3e3e0;
+  --codebg: #f1f1ee;
+
+  --maxw: 46rem;     /* ~736px */
+  --radius: 14px;
+
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* =========================================================
+   Reset / base
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1.15rem 0;
+  color: var(--text);
+}
+
+small {
+  color: var(--muted);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.75rem 0;
+  color: var(--text);
+  text-transform: none;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 2.6rem); }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.35rem; }
+h4 { font-size: 1.15rem; }
+
+/* =========================================================
+   Layout helpers (Spectral uses .wrapper > .inner)
+   ========================================================= */
+
+.wrapper {
+  padding: 4.25rem 0;
+}
+
+.wrapper > .inner {
+  width: min(92vw, var(--maxw));
+  margin: 0 auto;
+}
+
+/* Spectral sometimes uses .inner in other places too */
+.inner {
+  width: min(92vw, var(--maxw));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   Header / Nav (Spectral: #header)
+   ========================================================= */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background: rgba(248, 248, 246, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+}
+
+#header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+}
+
+#header h1,
+#header .logo {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+#header a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+#header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#header nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#header nav ul li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0;
+  border: 0;
+}
+
+#header nav ul li a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Give room for fixed header */
+#page-wrapper,
+body {
+  padding-top: 4.25rem;
+}
+
+/* =========================================================
+   Banner (Spectral: #banner)
+   Make it a notebook intro, not a hero
+   ========================================================= */
+
+#banner {
+  padding: 5.5rem 0 2.75rem 0;
+  text-align: left;
+  background: transparent;
+}
+
+#banner .inner {
+  width: min(92vw, var(--maxw));
+}
+
+#banner h2 {
+  margin: 0 0 0.75rem 0;
+  padding: 0;
+  border: 0;
+}
+
+#banner h2::before,
+#banner h2::after {
+  display: none;
+}
+
+#banner p {
+  max-width: 42rem;
+  color: var(--muted);
+  margin-bottom: 1.15rem;
+}
+
+/* =========================================================
+   Sections / Major headers
+   ========================================================= */
+
+header.major {
+  margin-bottom: 1.25rem;
+}
+
+header.major h2,
+header.major h3,
+header.major h4 {
+  margin-bottom: 0.35rem;
+}
+
+header.major p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* =========================================================
+   Content blocks
+   ========================================================= */
+
+.box {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+blockquote {
+  margin: 1.25rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+
+/* Lists */
+ul, ol {
+  margin: 0 0 1.15rem 1.25rem;
+}
+
+li {
+  margin: 0.25rem 0;
+}
+
+/* =========================================================
+   Code
+   ========================================================= */
+
+code {
+  background: var(--codebg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.95em;
+}
+
+pre {
+  background: var(--codebg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  overflow: auto;
+  margin: 1.25rem 0;
+}
+
+pre code {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* =========================================================
+   Buttons (Spectral uses .button)
+   ========================================================= */
+
+.button,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 12px;
+  padding: 0.65rem 0.95rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Primary variant if theme uses .primary */
+.button.primary,
+input[type="submit"].primary {
+  border-color: rgba(47, 93, 140, 0.35);
+}
+
+.button.primary:hover,
+input[type="submit"].primary:hover {
+  background: rgba(47, 93, 140, 0.06);
+}
+
+/* =========================================================
+   Forms
+   ========================================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: rgba(47, 93, 140, 0.55);
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+#footer {
+  border-top: 1px solid var(--border);
+  padding: 2.75rem 0;
+  background: transparent;
+}
+
+#footer .copyright,
+#footer p,
+#footer a {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   Utility: subtle meta text (dates, labels)
+   ========================================================= */
+
+.meta,
+.time,
+.date,
+.post-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   Responsive tweaks
+   ========================================================= */
+
+@media (max-width: 736px) {
+  body {
+    font-size: 17px;
+  }
+
+  #page-wrapper,
+  body {
+    padding-top: 4rem;
+  }
+
+  #header .inner {
+    padding: 0.75rem 0;
+  }
+
+  #header nav ul {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  #banner {
+    padding: 4.75rem 0 2.25rem 0;
+  }
+
+  .wrapper {
+    padding: 3.25rem 0;
+  }
+}
